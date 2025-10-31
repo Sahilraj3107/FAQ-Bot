@@ -21,5 +21,5 @@ spec:
       - name: chatbot
         image: sahil3107/faq-chatbot:latest
         ports:
-        -containerPort: 500  
+        - containerPort: 5000  
 
