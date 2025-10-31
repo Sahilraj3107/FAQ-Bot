@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: faq-chatbot-service
+  labels:
+    app: chatbot
+
+specs:
+  selector:
+    nametype: LoadBalancer
+    app: chatbot
+    ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000

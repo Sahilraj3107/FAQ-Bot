@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: faq-chatbot
+  labels:
+    app: chatbot
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatbot
+
+  template:
+    metadata:
+     labels:
+       app: chatbot
+
+    spec:
+      containers:
+      - name: chatbot
+        image: sahil3107/faq-chatbot:latest
+        ports:
+        -containerPort: 500  
+
