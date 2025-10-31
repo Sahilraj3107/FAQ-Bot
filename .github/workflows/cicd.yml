@@ -58,7 +58,3 @@ jobs:
         kubectl rollout status deployment/faq-chatbot
         kubectl get services faq-chatbot-service        
 
-    wait a sec, is it run on my local computer ,but i push in github, and 
-what is:  # On your local machine where you have kubectl configured:
-cat ~/.kube/config | base64
-isn't it provide key to local machine not github      
